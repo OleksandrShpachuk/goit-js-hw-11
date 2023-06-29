@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/css/style.css" rel="stylesheet">
-  <title>Homework 11</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Work 11</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- Search feild -->
-  <div class="search_container">
-    <!-- Search form -->
+  <section class="section">
     <form class="search-form" id="search-form">
-      <input name="searchQuery" type="text" autocomplete="off" placeholder="Search images...">
-      <!-- Submit button -->
-      <button type="submit">&#9906;</button>
+      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+      <button type="submit" class="search-button">Search</button>
     </form>
+  </section>
+  <div class="container">
+    <div class="gallery">
+      <!-- Img cards -->
+    </div>
+    <button type="button" class="load-more is-hidden">Load more</button>
   </div>
-
-  <div class="gallery simple-lightbox">
-
-  </div>
-  <button class="load-more invisible" type="button">Load more</button>
-  <p class="loader invisible"></p>
-
-  <script src="/src/js/index.js" type="module"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
